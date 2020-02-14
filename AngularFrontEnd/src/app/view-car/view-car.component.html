@@ -1,0 +1,89 @@
+<div id="itemTable">
+  <br/>
+
+  <input matInput (keyup)="applyCarFilter($event.target.value)" placeholder="Filter..." id="filterBar" type="text"
+         name="filtercars">
+
+
+  <h1 class='heading'>All Available Cars</h1>
+  <div class="mat-elevation-z8">
+    <mat-table [dataSource]="listCar">
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns:displayedColumns;"></mat-row>
+
+      <ng-container matColumnDef="PlateNumber">
+        <mat-header-cell *matHeaderCellDef>PlateNumber</mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.plateNumber}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="RentalFeePerDay">
+        <mat-header-cell *matHeaderCellDef>Rental
+          Fee PerDay
+        </mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.rentalFeePerDay}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Make">
+        <mat-header-cell *matHeaderCellDef>Make</mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.make}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Model">
+        <mat-header-cell *matHeaderCellDef>Model</mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.model}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Type">
+        <mat-header-cell *matHeaderCellDef>Type</mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.type}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="EngineCapacity">
+        <mat-header-cell *matHeaderCellDef>Engine
+          Capacity
+        </mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.engineCapacity}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="TransmissionType">
+        <mat-header-cell *matHeaderCellDef>Transmission
+          Type
+        </mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.transmissionType}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="NumberOfSeats">
+        <mat-header-cell *matHeaderCellDef>Number Of
+          Seats
+        </mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.numberOfSeats}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Colour">
+        <mat-header-cell *matHeaderCellDef>Colour</mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.colour}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="NumberOfDoors">
+        <mat-header-cell *matHeaderCellDef>Number Of
+          Doors
+        </mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.numberOfDoors}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="AirConditioning">
+        <mat-header-cell *matHeaderCellDef>AirConditioning</mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.airConditioning}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="FuelType">
+        <mat-header-cell *matHeaderCellDef>Fuel Type</mat-header-cell>
+        <mat-cell *matCellDef="let car">{{car.fuelType}}</mat-cell>
+      </ng-container>
+
+
+    </mat-table>
+  </div>
+
+</div>
+

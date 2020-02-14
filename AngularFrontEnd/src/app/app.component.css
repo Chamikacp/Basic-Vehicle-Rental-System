@@ -1,0 +1,52 @@
+#titleHeader {
+
+  margin-left: -10px;
+  margin-right: -8px;
+
+  padding-bottom: 15px;
+  color: black;
+}
+
+#navList {
+  list-style-type: none;
+  margin-left: 0px;
+  margin-right: -15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  background-color: #b6b8ba;
+  font-family: Lora;
+}
+
+.navListItem {
+  float: left;
+}
+
+#logoNavi {
+  margin-left: -35px;
+  width: 50px;
+  height: 51px;
+}
+
+.navListItem a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navListItem a:hover {
+  background-color: black;
+  color: white;
+}
+
+#navigation {
+  background-color: #b6b8ba;
+  position: relative;
+  width: 100%;
+  opacity: 0.9;
+  margin-left: -8px;
+}

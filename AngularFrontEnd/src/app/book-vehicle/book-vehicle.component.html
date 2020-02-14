@@ -1,0 +1,45 @@
+<div id="bookingForm">
+  <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+    <h2 align="center">Book a Vehicle</h2> <br/>
+    Please select the Vehicle Category :
+    <select id="bookingFormSelector" name="bookingCategory">
+      <option value="car"> Car</option>
+      <option value="bike"> Motorbike</option>
+    </select>
+    <br>
+    <br>
+    Vehicle Plate Number : <input required class="Info" type="text" name="plateNumber" #PlateNumber="ngModel"
+                                  [(ngModel)]="service.formData.PlateNumber">
+    <br>
+    <br>
+    Pick Up Date : <input required class="Info" type="date" name="pickUpDate" #PickUpDate="ngModel"
+                          [(ngModel)]="service.formData.PickUpDate">
+    <br>
+    <br>
+    Drop Off Date : <input required class="Info" type="date" name="dropOffDate" #DropOffDate="ngModel"
+                           [(ngModel)]="service.formData.DropOffDate">
+    <br>
+    <br>
+    Customer Name : <input required class="Info" type="text" name="customerName" #Name="ngModel"
+                           [(ngModel)]="service.formData.Name">
+    <br>
+    <br>
+    Customer License Number : <input required class="Info" type="text" name="licenseNumber" #LicenseNumber="ngModel"
+                                     [(ngModel)]="service.formData.LicenseNumber">
+    <br>
+    <br>
+    Customer Address : <input required class="Info" type="text" name="address" #Address="ngModel"
+                              [(ngModel)]="service.formData.Address">
+    <br>
+    <br>
+    Customer Phone Number : <input required class="Info" type="text" name="phoneNumber" #PhoneNumber="ngModel"
+                                   [(ngModel)]="service.formData.PhoneNumber">
+    <br>
+    <br>
+    <button id="loadFormButton" type="submit" [disabled]="form.invalid" value="submit">Book</button>
+
+    <br><br>
+  </form>
+</div>
+<br>
+

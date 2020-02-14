@@ -1,0 +1,36 @@
+#bookingForm {
+  width: 600px;
+  background-color: white;
+  align-content: center;
+  padding-left: 40px;
+  padding-top: 15px;
+
+  margin-left: 450px;
+
+  border-radius: 15px;
+  font-family: Calibri;
+  font-size: 16px;
+  box-shadow: 5px 5px 10px black;
+
+}
+
+#bookingFormSelector {
+  width: 258px;
+  margin-left: 10px;
+}
+
+#loadFormButton {
+  background-color: #4CAF50;
+  color: black;
+  border: 2px solid #4CAF50;
+  padding: 5px;
+  margin-top: 15px;
+  margin-left: 210px;
+  width: 100px;
+}
+
+.Info {
+  align-content: center;
+  width: 500px;
+}
+
